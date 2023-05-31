@@ -10,7 +10,7 @@ describe('Test react components', () => {
     const { container } = render(
       <Router>
         <Navigation />
-      </Router>
+      </Router>,
     );
     expect(container).toMatchSnapshot();
   });
@@ -19,7 +19,7 @@ describe('Test react components', () => {
     const { container } = render(
       <Provider store={store}>
         <CountryList />
-      </Provider>
+      </Provider>,
     );
     expect(container).toMatchSnapshot();
   });
