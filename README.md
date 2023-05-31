@@ -50,7 +50,7 @@ The data retrieved from the API is stored in the Redux store, allowing for effic
 
 Each page within the application, including the main page and individual item pages, has a unique route to enable proper navigation within the SPA.
 
-Finally, the project has been deployed and is accessible online, allowing users to access and interact with the WeatherAroundTheWorld application.
+Finally, the project has been deployed and is accessible online, allowing users to access and interact with the Weather world application.
 
 Overall, this project satisfies the stated requirements, and the deployed application provides a user-friendly interface to explore and view weather information from different countries.
 
