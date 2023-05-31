@@ -55,6 +55,12 @@ Finally, the project has been deployed and is accessible online, allowing users 
 Overall, this project satisfies the stated requirements, and the deployed application provides a user-friendly interface to explore and view weather information from different countries.
 
 
+Desktop Version & Mobile Version: 
+![image](https://github.com/harshi0102/react-redux-capstone/assets/108334376/51b785cc-be1d-42f8-afe3-052b044be49d)
+
+![image](https://github.com/harshi0102/react-redux-capstone/assets/108334376/24e28016-6042-4e84-ac16-6ec9b6c83c04)
+
+
 [Live Demo Link](https://react-redux-weather-app.onrender.com)
 
 ## 🛠 Built With <a name="built-with"></a>
