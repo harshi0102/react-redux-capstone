@@ -37,45 +37,22 @@
 # 📖 [World Weather App] <a name="about-project"></a>
 
 
-This is an app that lets you view the current weather around the world. And a detailed minimum and maximum temperature of the last week.
-In this project I create a SPA to show the weather of countries from Open-Meteo API. I follow the below requirements
 
-Home page
+I have created a single-page application (SPA) called "World Weather App " that allows users to view the current weather and detailed temperature data of countries around the world. The application is built with React and Redux, following the specified requirements.
 
- When the page loads, the webapp shows the list of categories that could be filtered out by some parameter, for example by the category name.
+The Home page of the application displays a list of categories, which can be filtered based on parameters such as the category name. Each category item also shows numeric values obtained from the Open-Meteo API. When a user clicks on a category item, they are navigated to the Details page.
 
- Along with the category name, it displays some numeric values per category that come from the API.
+On the Details page, the application retrieves data from the API to display detailed information about the selected category. Users can navigate back to the Home page by clicking the "Back" button (<).
 
- When the user clicks (or taps) on a category item, the application navigates to the details page.
+To ensure the quality of the application, I have created unit tests for the pure functions in the Redux code. Additionally, integration tests have been implemented using React Testing Library. API access has been mocked in the tests to prevent actual requests, and the connection to the Redux Store has also been mocked for isolated testing.
 
-Details page
+The data retrieved from the API is stored in the Redux store, allowing for efficient management and access. A Filter stateless component is used to filter the data obtained from the API based on the specified parameters.
 
- In the details page, the webapp retrieves data from the API to show detailed data in the category.
+Each page within the application, including the main page and individual item pages, has a unique route to enable proper navigation within the SPA.
 
- When the user clicks on the "Back" button (<), the user navigates to the home page.
+Finally, the project has been deployed and is accessible online, allowing users to access and interact with the WeatherAroundTheWorld application.
 
-Testing requirements
-
- Created unit tests for pure functions in your Redux code.
-
- Created integration tests for your application using the React Testing Library.
-
- I mocked the access to the API, so that my tests does not send actual requests.
-
- I mocked the connection to the Redux Store.
-
-Technical requirements
-
- The project is a single-page application (SPA) built with React and Redux.
-
- The data retrieved from the API is stored in the Redux store.
-
- I filtered out the data that you retrieve from the API using a Filter stateless component.
-
- Every page (the main page and the pages for each item) have a unique route within the SPA.
-
- The project is deployed and accessible online.
-
+Overall, this project satisfies the stated requirements, and the deployed application provides a user-friendly interface to explore and view weather information from different countries.
 
 ## 🛠 Built With <a name="built-with"></a>
 
