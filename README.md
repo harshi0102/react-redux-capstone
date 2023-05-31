@@ -54,6 +54,9 @@ Finally, the project has been deployed and is accessible online, allowing users 
 
 Overall, this project satisfies the stated requirements, and the deployed application provides a user-friendly interface to explore and view weather information from different countries.
 
+
+[Live Demo Link](https://react-redux-weather-app.onrender.com)
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -83,7 +86,7 @@ Overall, this project satisfies the stated requirements, and the deployed applic
 
 > Please click the link below to check the demo
 
-- [Live Demo Link]()
+- [Live Demo Link](https://react-redux-weather-app.onrender.com)
 - [Presentation Video Link]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -147,7 +150,7 @@ To run tests, run the following command:
 
 ### Deployment
 
-You can deploy this project using:
+Check here for live online version: https://react-redux-weather-app.onrender.com
 
 <!--
 Example:
