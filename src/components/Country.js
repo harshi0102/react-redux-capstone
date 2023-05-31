@@ -15,7 +15,7 @@ const Country = ({
           {`${data.current_weather.temperature}°C`}
         </p>
       </div>
-      <img src={arrow} alt="right arrow" className="rightbutton" />
+      <img src={arrow} alt="rightbutton" className="rightbutton" />
     </Link>
   );
 };
