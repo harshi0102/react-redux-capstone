@@ -38,6 +38,44 @@
 
 
 This is an app that lets you view the current weather around the world. And a detailed minimum and maximum temperature of the last week.
+In this project I create a SPA to show the weather of countries from Open-Meteo API. I follow the below requirements
+
+Home page
+
+ When the page loads, the webapp shows the list of categories that could be filtered out by some parameter, for example by the category name.
+
+ Along with the category name, it displays some numeric values per category that come from the API.
+
+ When the user clicks (or taps) on a category item, the application navigates to the details page.
+
+Details page
+
+ In the details page, the webapp retrieves data from the API to show detailed data in the category.
+
+ When the user clicks on the "Back" button (<), the user navigates to the home page.
+
+Testing requirements
+
+ Created unit tests for pure functions in your Redux code.
+
+ Created integration tests for your application using the React Testing Library.
+
+ I mocked the access to the API, so that my tests does not send actual requests.
+
+ I mocked the connection to the Redux Store.
+
+Technical requirements
+
+ The project is a single-page application (SPA) built with React and Redux.
+
+ The data retrieved from the API is stored in the Redux store.
+
+ I filtered out the data that you retrieve from the API using a Filter stateless component.
+
+ Every page (the main page and the pages for each item) have a unique route within the SPA.
+
+ The project is deployed and accessible online.
+
 
 ## 🛠 Built With <a name="built-with"></a>
 
