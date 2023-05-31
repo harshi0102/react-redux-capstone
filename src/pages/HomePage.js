@@ -1,7 +1,7 @@
 import CountryList from '../components/CountryList';
 
-const Home = () => (
+const HomePage = () => (
   <CountryList />
 );
 
-export default Home;
+export default HomePage;

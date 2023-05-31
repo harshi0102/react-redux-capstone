@@ -1,5 +1,5 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import WeatherService from '../../services/WeatherService';
+import WeatherService from '../../services/Climate';
 
 const GET_WEATHER = 'weatherapp/country/GET';
 const GET_WEATHER_FULFILLED = 'weatherapp/country/GET/fulfilled';

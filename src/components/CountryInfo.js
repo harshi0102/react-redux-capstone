@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
-import DayDetail from './DayDetail';
+import WeatherDayInfo from './WeatherDayInfo';
 
-const CountryDetail = () => {
+const CountryInfo = () => {
   const [detailData, setDetailData] = useState(null);
   const { country } = useParams();
   const countries = useSelector((state) => state.countries);
@@ -32,7 +32,7 @@ const CountryDetail = () => {
         <img
           src={`https://flagcdn.com/144x108/${alpha2?.toLowerCase()}.png`}
           alt=""
-          className="detail-flag"
+          className="detail-country-flag"
         />
         <div className="infocountrycontent">
           <img
@@ -40,10 +40,10 @@ const CountryDetail = () => {
             alt="weather icon"
             className="weather-icon"
           />
-          <div className="detail-text">
+          <div className="info-text">
             <p className="infocountrytitle">{detailData.country}</p>
-            <p className="infotemperature">{`Temperature: ${data.current_weather.temperature}°C`}</p>
-            <p className="infotemperature">{`Wind: ${data.current_weather.windspeed} km/h`}</p>
+            <p className="infotempreature">{`Temperature: ${data.current_weather.temperature}°C`}</p>
+            <p className="infotempreature">{`Wind: ${data.current_weather.windspeed} km/h`}</p>
           </div>
         </div>
       </div>
@@ -52,7 +52,7 @@ const CountryDetail = () => {
       </div>
       <ul className="homeinfosection">
         {data.daily.time.map((time, index) => (
-          <DayDetail
+          <WeatherDayInfo
             time={time}
             key={time}
             min={data.daily.temperature_2m_min[index]}
@@ -64,4 +64,4 @@ const CountryDetail = () => {
   );
 };
 
-export default CountryDetail;
+export default CountryInfo;

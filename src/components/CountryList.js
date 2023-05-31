@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getWeatherAPI } from '../redux/Country/Country';
 import Country from './Country';
-import Loading from './Loading';
+import Loading from './LoadingStage';
 
 const CountryList = () => {
   const [primaryCountry, setPrimaryCountry] = useState(Math.floor(Math.random() * 243));

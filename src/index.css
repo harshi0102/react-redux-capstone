@@ -271,7 +271,6 @@ body {
 .period-wave-dot:nth-child(4) {
   animation: jump var(--uib-speed) ease-in-out infinite;
 }
-
 @keyframes jump {
   0%,
   100% {

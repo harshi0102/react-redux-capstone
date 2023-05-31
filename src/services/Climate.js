@@ -13,8 +13,8 @@ const getAll = async () => {
   return newCountries;
 };
 
-const WeatherService = {
+const Climate = {
   getAll,
 };
 
-export default WeatherService;
+export default Climate;

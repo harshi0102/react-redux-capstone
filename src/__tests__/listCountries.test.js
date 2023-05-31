@@ -1,13 +1,18 @@
-import { fetchWeatherAPI, fetchWeather } from '../redux/Country/Country';
+import { getWeatherAPI, getWeather } from '../redux/Country/Country';
 
-it('Expects getWeatherAPI get a function', () => {
-  let countries = [];
-  countries = fetchWeatherAPI();
-  expect(typeof countries).toBe('function');
+describe('getWeatherAPI', () => {
+  it('should return a function', () => {
+    const result = getWeatherAPI();
+    expect(typeof result).toBe('function');
+  });
 });
-it('asd', () => {
-  const countries = ['Argentina', 'Iran'];
-  const getCountries = fetchWeather(countries);
-  expect(countries.length).toBe(2);
-  expect(getCountries.type).toBe('weatherapp/country/GET');
+
+describe('getWeather', () => {
+  it('should create the correct action', () => {
+    const countries = ['Argentina', 'Iran'];
+    const action = getWeather(countries);
+
+    expect(action.type).toBe('weatherapp/country/GET');
+    expect(action.payload).toEqual(countries);
+  });
 });

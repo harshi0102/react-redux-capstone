@@ -1,9 +1,9 @@
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { Route, Routes } from 'react-router-dom';
-import CountryDetail from './components/CountryDetail';
-import Navbar from './components/Navbar';
-import Home from './pages/Home';
+import CountryInfo from './components/CountryInfo';
+import Navigation from './components/Navigation';
+import HomePage from './pages/HomePage';
 import { getWeatherAPI } from './redux/Country/Country';
 
 function App() {
@@ -12,11 +12,11 @@ function App() {
     dispatch(getWeatherAPI());
   }, [dispatch]);
   return (
-    <div className="main-container">
-      <Navbar />
+    <div className="appcontainer">
+      <Navigation />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/:country" element={<CountryDetail />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/:country" element={<CountryInfo />} />
       </Routes>
     </div>
   );

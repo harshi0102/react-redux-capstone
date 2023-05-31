@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Loading = () => {
+const LoadingStage = () => {
   const dots = Array.from({ length: 4 }, (_, index) => (
     <div className="period-wave-dot" key={index} />
   ));
@@ -12,4 +12,4 @@ const Loading = () => {
   );
 };
 
-export default Loading;
+export default LoadingStage;
