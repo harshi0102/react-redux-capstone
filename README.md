@@ -50,7 +50,7 @@ The data retrieved from the API is stored in the Redux store, allowing for effic
 
 Each page within the application, including the main page and individual item pages, has a unique route to enable proper navigation within the SPA.
 
-Finally, the project has been deployed and is accessible online, allowing users to access and interact with the WeatherAroundTheWorld application.
+Finally, the project has been deployed and is accessible online, allowing users to access and interact with the Weather world application.
 
 Overall, this project satisfies the stated requirements, and the deployed application provides a user-friendly interface to explore and view weather information from different countries.
 
@@ -59,6 +59,7 @@ Desktop Version & Mobile Version:
 ![image](https://github.com/harshi0102/react-redux-capstone/assets/108334376/51b785cc-be1d-42f8-afe3-052b044be49d)
 
 ![image](https://github.com/harshi0102/react-redux-capstone/assets/108334376/24e28016-6042-4e84-ac16-6ec9b6c83c04)
+![video1007776689](https://github.com/harshi0102/react-redux-capstone/assets/108334376/3275765f-24a4-4caf-a867-8451afd4ff28)
 
 
 [Live Demo Link](https://react-redux-weather-app.onrender.com)
@@ -93,7 +94,7 @@ Desktop Version & Mobile Version:
 > Please click the link below to check the demo
 
 - [Live Demo Link](https://react-redux-weather-app.onrender.com)
-- [Presentation Video Link](https://drive.google.com/file/d/1JLUb5vYbMw1gyKWSjw2WdIP5pR5qqsmD/view?usp=sharing)
+- [Presentation Video Link](https://drive.google.com/file/d/1QTdhj8jCfbODp5yRpK-q8zg2WLxSD-Tp/view?usp=sharing)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

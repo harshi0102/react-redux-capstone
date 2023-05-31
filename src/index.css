@@ -1,13 +1,274 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+body {
+  background-color: #fd5294;
+}
+
+.headerinfosection {
+  background-color: #c94075;
+  height: 30px;
+  display: flex;
+  color: #fff;
+}
+
+.navigationheader {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.headinglist {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  width: 100%;
+}
+
+.buttonheader {
+  display: flex;
+  gap: 12px;
+}
+
+.countriessection {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.homeinfotitle {
+  color: #fff;
+  padding: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-size: 12px;
+  width: 100%;
+}
+
+.homecontainer {
+  display: flex;
+  background-color: #dd4883;
+}
+
+.searchbox {
+  margin: 5px;
+  padding: 5px;
+  background-color: #fa669fc9;
+  border: none;
+  color: #fff;
+  width: 100%;
+}
+
+.search-input::placeholder {
+  color: #fff;
+}
+
+.countrysection {
+  width: 50%;
+  display: flex;
+  background-color: #cf4278;
+  height: 100px;
+  gap: 12px;
+  padding: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+
+.rightbutton {
+  position: absolute;
+  height: 20px;
+  top: 10px;
+  right: 5px;
+}
+
+.flag {
+  height: 50px;
+  transform: rotate(-45deg);
+  translate: 0 10px;
+  filter: grayscale();
+  opacity: 0.5;
+}
+
+.color {
+  filter: grayscale(0);
+  transform: rotate(0);
+  opacity: 1;
+}
+
+.countrydetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.title {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.temperature {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.fullwidth {
+  width: 100%;
+  justify-content: center;
+  height: 150px;
+}
+
+.fullwidth .title {
+  font-size: 22px;
+}
+
+.fullwidth .flag {
+  height: 100px;
+}
+
+.countrysection:hover > .flag {
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+.loadingsectioncontainer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  translate: -23px;
+}
+
+.detailsection {
+  display: flex;
+  flex-direction: column;
+}
+
+.detailinfo {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+  align-items: center;
+}
+
+.infocountrycontent {
+  display: flex;
+  flex-direction: column;
+}
+
+.infocountrytitle {
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.infotempreature {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.info-text {
+  z-index: 99;
+}
+
+.weather-icon {
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  top: 30px;
+  right: -50px;
+  opacity: 0.3;
+  z-index: 0;
+}
+
+.DayViewContainer {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  background-color: #dd4883;
+}
+
+.homeinfosection > li:nth-child(even) {
+  background-color: #cf4278;
+}
+
+.background-light {
+  background-color: #dd4883;
+}
+
+.background-dark {
+  background-color: #cf4278;
+}
+
+.background-main {
+  background-color: #fc5193;
+}
+
+.period-wave {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 47px;
+  height: 8px;
+  padding-top: 16px;
+}
+
+.period-wave-dot {
+  flex-shrink: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.65);
+  will-change: transform;
+}
+
+.period-wave-dot:nth-child(1) {
+  animation: jump 1s ease-in-out -0.45s infinite;
+}
+
+.period-wave-dot:nth-child(2) {
+  animation: jump 1s ease-in-out -0.3s infinite;
+}
+
+.period-wave-dot:nth-child(3) {
+  animation: jump 1s ease-in-out -0.15s infinite;
+}
+
+.period-wave-dot:nth-child(4) {
+  animation: jump 1s ease-in-out infinite;
+}
+
+@keyframes jump {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-16px);
+  }
 }
