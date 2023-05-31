@@ -87,7 +87,7 @@ Overall, this project satisfies the stated requirements, and the deployed applic
 > Please click the link below to check the demo
 
 - [Live Demo Link](https://react-redux-weather-app.onrender.com)
-- [Presentation Video Link]()
+- [Presentation Video Link](https://drive.google.com/file/d/1JLUb5vYbMw1gyKWSjw2WdIP5pR5qqsmD/view?usp=sharing)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
